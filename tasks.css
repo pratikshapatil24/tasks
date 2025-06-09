@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .radio-group {
+    margin-bottom: 20px;
+  }
+
+  .price-box {
+    background-color: #fff0e6;
+    border: 1px dashed #ff9900;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff0e6;
+    position: relative;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+    border: none;
+  }
+
+  .final-boxes {
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px dashed deeppink;
+    background-color: #fafafa;
+    display: none;
+  }
+
+  .final-entry {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: hotpink;
+    color: white;
+  }
+
+  .discount-badge {
+    background-color: deeppink;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid deeppink;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: hotpink;
+  }
+
+  .unit-fieldset {
+    border-top: 1px solid pink;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .unit-fieldset legend {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #legendHighlight {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .most-popular-badge {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: pink;
+    color: hotpink;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  select {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  #selectedUnitLabel {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: deeppink;
+  }
+
+  #selectedPriceLabel {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 15px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 15px;
+    }
+
+    .unit-fieldset legend {
+      font-size: 20px;
+    }
+
+    th, td {
+      font-size: 13px;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .final-entry {
+      font-size: 14px;
+    }
+
+    .discount-badge, .most-popular-badge {
+      font-size: 13px;
+    }
+
+    select {
+      font-size: 13px;
+      height: 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .unit-fieldset legend {
+      font-size: 18px;
+    }
+
+    th, td {
+      font-size: 12px;
+    }
+
+    button {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .final-entry {
+      font-size: 13px;
+    }
+
+    .discount-badge, .most-popular-badge {
+      font-size: 12px;
+      padding: 2px 4px;
+    }
+
+    select {
+      font-size: 12px;
+      height: 26px;
+    }
+
+    #selectedUnitLabel {
+      font-size: 16px;
+    }
+  }

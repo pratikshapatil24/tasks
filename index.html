@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tasks.css">
+  
+</head>
+<body>
+    <div class="container">
+    <fieldset class="unit-fieldset">
+      <legend><span id="legendHighlight">YAY! It's BOGO </span></legend>
+
+      <div class="radio-group">
+        <!-- Unit 1 -->
+        <div class="price-box">
+          <label><input type="radio" name="unit" value="unit1" /> <strong>Unit 1</strong></label>
+          <span class="discount-badge">10% Off</span> - <strong class="price">$10.00 USD</strong>
+          <br />
+          Standard Price: <span style="text-decoration: line-through;">$24.00 USD</span>
+          <div id="unit1" class="box">
+            <table id="unit1Table">
+              <thead>
+                <tr><th></th><th>Size</th><th>Color</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>#1</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+                <tr><td>#2</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="price-box">
+          <label><input type="radio" name="unit" value="unit2" /> <strong>Unit 2</strong></label>
+          <span class="discount-badge">20% Off</span> — <strong class="price">$18.00 USD</strong>
+          <br />
+          Standard Price: <span style="text-decoration: line-through;">$24.00 USD</span>
+          <div id="unit2" class="box">
+            <div class="most-popular-badge" id="mostPopularInside">★ Most Popular</div>
+            <table id="unit2Table">
+              <thead>
+                <tr><th></th><th>Size</th><th>Color</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>#1</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+                <tr><td>#2</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="price-box">
+          <label><input type="radio" name="unit" value="unit3" /> <strong>Unit 3</strong></label>
+          <span class="discount-badge">30% Off</span> — <strong class="price">$24.00 USD</strong>
+          <br />
+          Standard Price: <span style="text-decoration: line-through;">$24.00 USD</span>
+          <div id="unit3" class="box">
+            <table id="unit3Table">
+              <thead>
+                <tr><th></th><th>Size</th><th>Color</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>#1</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+                <tr><td>#2</td><td><select><option>S</option><option>L</option><option>XL</option><option>XXL</option></select></td><td><select><option>Red</option><option>Pink</option><option>Green</option><option>Blue</option></select></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Display selected unit and price -->
+       <span>Free Delivery : </span>
+      <span id="selectedUnitLabel"></span>
+      <span id="selectedPriceLabel"></span>
+
+      <button onclick="addToCart()">Add to Cart</button>
+
+      <div class="final-boxes" id="finalBox">
+        <h3 id="finalHeading" style="display: none;">Final Entries</h3>
+      </div>
+    </fieldset>
+  </div>
+   <script src="./tasks.js"></script>
+
+</body>
+</html>
